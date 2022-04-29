@@ -1,0 +1,25 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-repeat: no-repeat;
+
+  background-size: 100% 100%;
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #111 20%,
+    #333 100%,
+    #ddd 100%
+  );
+  padding-top: 30px;
+}
+
+h1,
+h4 {
+  color: #feffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
