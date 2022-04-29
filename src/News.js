@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
 import db from "./firebase";
 
-
-
 function News() {
   const [data, setData] = useState([]);
 
@@ -20,7 +18,7 @@ function News() {
     <>
       <Container>
         {data.map((results) => (
-          <Card>
+          <Card key={results.Info_date}>
             <img src={results.Image} alt="" />
             <h3>{results.Info}</h3>
             <div className="date">{results.Info_date}</div>
