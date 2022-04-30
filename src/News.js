@@ -22,7 +22,9 @@ function News() {
             <img src={results.Image} alt="" />
             <h3>{results.Info}</h3>
             <div className="date">{results.Info_date}</div>
-            <button href={results.Links}>Read More</button>
+            <a h ref={results.Links}>
+              Read More
+            </a>
           </Card>
         ))}
       </Container>
@@ -67,7 +69,9 @@ const Card = styled.div`
     margin: 12px 0;
   }
 
-  button {
+  a {
+    text-decoration: none;
+    color: black;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     padding: 5px;
