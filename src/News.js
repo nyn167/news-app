@@ -22,7 +22,7 @@ function News() {
             <img src={results.Image} alt="" />
             <h3>{results.Info}</h3>
             <div className="date">{results.Info_date}</div>
-            <a h ref={results.Links}>
+            <a href={results.Links}>
               Read More
             </a>
           </Card>
